@@ -1,0 +1,92 @@
+[
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "https://example.com/shakib.jpg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Left-arm Orthodox",
+    "battingStyle": "Left-hand Bat",
+    "price": 8500000
+  },
+  {
+    "playerName": "Mustafizur Rahman",
+    "playerImg": "https://example.com/mustafizur.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm Fast Medium",
+    "battingStyle": "Left-hand Bat",
+    "price": 7000000
+  },
+  {
+    "playerName": "Litton Das",
+    "playerImg": "https://example.com/litton.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 6500000
+  },
+  {
+    "playerName": "Taskin Ahmed",
+    "playerImg": "https://example.com/taskin.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm Fast",
+    "battingStyle": "Right-hand Bat",
+    "price": 6000000
+  },
+  {
+    "playerName": "Mehidy Hasan Miraz",
+    "playerImg": "https://example.com/mehidy.jpg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 7500000
+  },
+  {
+    "playerName": "Najmul Hossain Shanto",
+    "playerImg": "https://example.com/shanto.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Left-hand Bat",
+    "price": 5500000
+  },
+  {
+    "playerName": "Rishad Hossain",
+    "playerImg": "https://example.com/rishad.jpg",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm Leg Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 4500000
+  },
+  {
+    "playerName": "Tanzid Hasan",
+    "playerImg": "https://example.com/tanzid.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Left-hand Bat",
+    "price": 4000000
+  },
+  {
+    "playerName": "Jaker Ali",
+    "playerImg": "https://example.com/jaker.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Wicket-Keeper Batter",
+    "bowlingStyle": "Right-arm Medium",
+    "battingStyle": "Right-hand Bat",
+    "price": 3500000
+  },
+  {
+    "playerName": "Nahid Rana",
+    "playerImg": "https://example.com/nahid.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm Fast",
+    "battingStyle": "Right-hand Bat",
+    "price": 5000000
+  }
+]
