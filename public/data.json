@@ -1,7 +1,7 @@
 [
   {
     "playerName": "Shakib Al Hasan",
-    "playerImg": "https://example.com/shakib.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "All-Rounder",
     "bowlingStyle": "Left-arm Orthodox",
@@ -10,7 +10,7 @@
   },
   {
     "playerName": "Mustafizur Rahman",
-    "playerImg": "https://example.com/mustafizur.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Bowler",
     "bowlingStyle": "Left-arm Fast Medium",
@@ -19,7 +19,7 @@
   },
   {
     "playerName": "Litton Das",
-    "playerImg": "https://example.com/litton.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Batter",
     "bowlingStyle": "Right-arm Off Break",
@@ -28,7 +28,7 @@
   },
   {
     "playerName": "Taskin Ahmed",
-    "playerImg": "https://example.com/taskin.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Bowler",
     "bowlingStyle": "Right-arm Fast",
@@ -37,7 +37,7 @@
   },
   {
     "playerName": "Mehidy Hasan Miraz",
-    "playerImg": "https://example.com/mehidy.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "All-Rounder",
     "bowlingStyle": "Right-arm Off Break",
@@ -46,7 +46,7 @@
   },
   {
     "playerName": "Najmul Hossain Shanto",
-    "playerImg": "https://example.com/shanto.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Batter",
     "bowlingStyle": "Right-arm Off Break",
@@ -55,7 +55,7 @@
   },
   {
     "playerName": "Rishad Hossain",
-    "playerImg": "https://example.com/rishad.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "All-Rounder",
     "bowlingStyle": "Right-arm Leg Break",
@@ -64,7 +64,7 @@
   },
   {
     "playerName": "Tanzid Hasan",
-    "playerImg": "https://example.com/tanzid.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Batter",
     "bowlingStyle": "Right-arm Off Break",
@@ -73,7 +73,7 @@
   },
   {
     "playerName": "Jaker Ali",
-    "playerImg": "https://example.com/jaker.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Wicket-Keeper Batter",
     "bowlingStyle": "Right-arm Medium",
@@ -82,7 +82,7 @@
   },
   {
     "playerName": "Nahid Rana",
-    "playerImg": "https://example.com/nahid.jpg",
+    "playerImg": "https://static.toiimg.com/photo/119127688.cms",
     "origin": "Bangladesh",
     "playerType": "Bowler",
     "bowlingStyle": "Right-arm Fast",

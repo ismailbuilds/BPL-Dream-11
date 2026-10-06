@@ -21,7 +21,7 @@ function App() {
      <Banner></Banner>
 
      <Suspense fallback={<h3>Loading....</h3>}>
-      <Players playersPromise={playersPromise}></Players>
+      <Players playerPromise={playersPromise}></Players>
      </Suspense>
 
     </>

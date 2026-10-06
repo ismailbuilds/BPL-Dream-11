@@ -1,6 +1,6 @@
 export interface PlayerType{
     playerName: string,
-    playerImg: ,
+    playerImg: string,
     origin: string,
     playerType: string ,
     bowlingStyle: string,
