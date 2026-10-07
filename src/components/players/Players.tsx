@@ -11,7 +11,9 @@ interface PlayersProp{
 const Players = ({ playerPromise, coin, setCoin } : PlayersProp) => {
   const players = use(playerPromise);
   console.log(players);
-  const [buttonType, setButtonType] = useState("available")
+  
+  const [buttonType, setButtonType] = useState<"available" | "selected">("available")
+  const [selectedPlayers, setSelectedPlayers] = useState<PlayerType[]>([])
   console.log(buttonType)
   // const handleButtonType = (type : "available" | "selected") => {
   //   setButtonType(type)
@@ -27,7 +29,9 @@ const Players = ({ playerPromise, coin, setCoin } : PlayersProp) => {
 
       </div>
       {
-        buttonType === "available" ? (<AvailablePlayers players = {players} coin={coin} setCoin={setCoin} />) :(<SelectedPlayers/>)
+        buttonType === "available" ? (<AvailablePlayers players = {players} coin={coin} setCoin={setCoin} 
+          selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} />) :
+          (<SelectedPlayers  selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}/>)
       }
     </div>
   );

@@ -1,6 +1,12 @@
 import React from 'react';
 
-const SelectedPlayers = () => {
+interface SelectedPlayersProps{
+    selectedPlayers: PlayerType[],
+    setSelectedPlayers: Dispatch<SetStateAction<PlayerType[]>>
+}
+
+const SelectedPlayers = ({selectedPlayers, setSelectedPlayers}: SelectedPlayersProps) => {
+    console.log(selectedPlayers, "from selected player compo")
     return (
         <div>
             Selected Players

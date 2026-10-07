@@ -2,14 +2,17 @@ import { FaUser, FaStar } from "react-icons/fa";
 import type { PlayerType } from "../../types/type";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import { toast } from "react-toastify";
+import Players from "./Players";
 
 interface PlayerTypeProp{
     player: PlayerType,
     coin: number,
-    setCoin: Dispatch<SetStateAction<number>>
+    setCoin: Dispatch<SetStateAction<number>>,
+    selectedPlayers: PlayerType[],
+    setSelectedPlayers: Dispatch<SetStateAction<PlayerType[]>>
 }
 
-const PlayerCard = ({ player, coin, setCoin }: PlayerTypeProp) => {
+const PlayerCard = ({ player, coin, setCoin, selectedPlayers, setSelectedPlayers }: PlayerTypeProp) => {
     const [IsSelected, setIsSelected] = useState(false)
     const handleIsSelected = () =>{
         setIsSelected(!IsSelected)
@@ -20,7 +23,9 @@ const PlayerCard = ({ player, coin, setCoin }: PlayerTypeProp) => {
         }else{
             toast.error("Insufficient Balance");
         }
+
         
+        setSelectedPlayers([...selectedPlayers, player])
     }
     return (
         <div className="group overflow-hidden rounded-2xl border border-base-200 bg-base-100 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
