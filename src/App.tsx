@@ -15,15 +15,16 @@ const playersFetch = async (): Promise<PlayerType[]> => {
 
 
 function App() {
-  const playersPromise = playersFetch();
-  const [coin, setCoin] = useState(5000)
+  // const playersPromise = playersFetch();
+  const [playerPromise] = useState(() => playersFetch())
+  const [coin, setCoin] = useState(2000)
   return (
     <>
      <Nav coin={coin}></Nav>
      <Banner></Banner>
 
      <Suspense fallback={<h3>Loading....</h3>}>
-      <Players playerPromise={playersPromise} coin={coin} setCoin={setCoin}></Players>
+      <Players playerPromise={playerPromise} coin={coin} setCoin={setCoin}></Players>
      </Suspense>
 
     </>
