@@ -3,6 +3,7 @@ import Banner from "./components/Banner"
 import Nav from "./components/Nav"
 import { Suspense } from "react"
 import type { PlayerType } from "./types/type"
+import { useState } from 'react';
 
 const playersFetch = async (): Promise<PlayerType[]> => {
   const res = await fetch('/data.json')
@@ -15,13 +16,14 @@ const playersFetch = async (): Promise<PlayerType[]> => {
 
 function App() {
   const playersPromise = playersFetch();
+  const [coin, setCoin] = useState(1500)
   return (
     <>
-     <Nav></Nav>
+     <Nav coin={coin}></Nav>
      <Banner></Banner>
 
      <Suspense fallback={<h3>Loading....</h3>}>
-      <Players playerPromise={playersPromise}></Players>
+      <Players playerPromise={playersPromise} coin={coin} setCoin={setCoin}></Players>
      </Suspense>
 
     </>

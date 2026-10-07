@@ -1,7 +1,27 @@
 import { FaUser, FaStar } from "react-icons/fa";
 import type { PlayerType } from "../../types/type";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
-const PlayerCard = ({ player }: { player: PlayerType }) => {
+interface PlayerTypeProp{
+    player: PlayerType,
+    coin: number,
+    setCoin: Dispatch<SetStateAction<number>>
+}
+
+const PlayerCard = ({ player, coin, setCoin }: PlayerTypeProp) => {
+    const [IsSelected, setIsSelected] = useState(false)
+    const handleIsSelected = () =>{
+        setIsSelected(!IsSelected)
+        const newCoinPrice = coin - player.price;
+        if(newCoinPrice >= 0){
+            setCoin(newCoinPrice)
+            toast.success(`${player.playerName} Purchaised Successfully`)
+        }else{
+            toast.error("Insufficient Balance");
+        }
+        
+    }
     return (
         <div className="group overflow-hidden rounded-2xl border border-base-200 bg-base-100 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
             {/* Player Image */}
@@ -81,8 +101,11 @@ const PlayerCard = ({ player }: { player: PlayerType }) => {
                         </h3>
                     </div>
 
-                    <button className="btn btn-primary rounded-xl px-5 shadow-sm transition-all hover:scale-105">
-                        Choose Player
+                    <button onClick={handleIsSelected} className="btn btn-primary rounded-xl px-5 shadow-sm 
+                    transition-all hover:scale-105" 
+                    disabled={IsSelected === true ? true : false}
+                    >
+                        {IsSelected  ? "Selected" : "Choose Player"}
                     </button>
                 </div>
             </div>
@@ -91,3 +114,4 @@ const PlayerCard = ({ player }: { player: PlayerType }) => {
 };
 
 export default PlayerCard;
+// ()=> setIsSelected(true)
